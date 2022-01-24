@@ -1,0 +1,255 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_US R3
+U 1 1 61BF78C6
+P 4900 2600
+F 0 "R3" V 4800 2600 50  0000 C CNN
+F 1 "10K" V 4700 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4940 2590 50  0001 C CNN
+F 3 "~" H 4900 2600 50  0001 C CNN
+	1    4900 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 61BF78CD
+P 5100 2600
+F 0 "#PWR04" H 5100 2350 50  0001 C CNN
+F 1 "GND" H 5105 2427 50  0000 C CNN
+F 2 "" H 5100 2600 50  0001 C CNN
+F 3 "" H 5100 2600 50  0001 C CNN
+	1    5100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 61BF78E2
+P 6100 3700
+F 0 "H2" H 6200 3749 50  0000 L CNN
+F 1 "MountingHole_Pad" H 6200 3658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad_TopBottom" H 6100 3700 50  0001 C CNN
+F 3 "~" H 6100 3700 50  0001 C CNN
+	1    6100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 61BF78F4
+P 6100 3000
+F 0 "H1" H 5884 3049 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5333 2958 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad_TopBottom" H 6100 3000 50  0001 C CNN
+F 3 "~" H 6100 3000 50  0001 C CNN
+	1    6100 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 2600 5100 2600
+$Comp
+L Device:LED D1
+U 1 1 61BF78DC
+P 5300 3250
+F 0 "D1" H 5300 3450 50  0000 L CNN
+F 1 "LED" H 5300 3350 50  0000 L CNN
+F 2 "LED_THT:LED_D5.0mm_FlatTop" H 5300 3250 50  0001 C CNN
+F 3 "~" H 5300 3250 50  0001 C CNN
+	1    5300 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 61BF78D6
+P 5000 3250
+F 0 "R2" V 4900 3250 50  0000 C CNN
+F 1 "30K" V 4800 3250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5040 3240 50  0001 C CNN
+F 3 "~" H 5000 3250 50  0001 C CNN
+	1    5000 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J3
+U 1 1 61BF78B0
+P 4200 2900
+F 0 "J3" H 4200 2550 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 4200 2650 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal" H 4200 2900 50  0001 C CNN
+F 3 "~" H 4200 2900 50  0001 C CNN
+	1    4200 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push_SPDT SW3
+U 1 1 61BF78A9
+P 5300 3850
+F 0 "SW3" H 5200 4000 50  0000 C CNN
+F 1 "SW_Push_SPDT" H 5300 3650 50  0000 C CNN
+F 2 "Custom Parts:Limit_Switch_JL012-13.5-2" H 5300 3850 50  0001 C CNN
+F 3 "~" H 5300 3850 50  0001 C CNN
+	1    5300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 61CB2DD0
+P 4750 3200
+F 0 "R1" H 4600 3200 50  0000 C CNN
+F 1 "10" H 4600 3100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4790 3190 50  0001 C CNN
+F 3 "~" H 4750 3200 50  0001 C CNN
+	1    4750 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3000 4450 3000
+Wire Wire Line
+	4550 3700 4450 3700
+Wire Wire Line
+	4750 3350 4750 3400
+$Comp
+L Transistor_FET:IRLZ44N Q2
+U 1 1 61BF78BC
+P 4750 3600
+F 0 "Q2" V 4999 3600 50  0000 C CNN
+F 1 "IRLZ44N" V 5090 3600 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5000 3525 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 4750 3600 50  0001 L CNN
+	1    4750 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 61CCDC78
+P 6000 3250
+F 0 "#PWR01" H 6000 3000 50  0001 C CNN
+F 1 "GND" H 6150 3200 50  0000 C CNN
+F 2 "" H 6000 3250 50  0001 C CNN
+F 3 "" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3250 5450 3250
+Wire Wire Line
+	4750 2450 4750 2600
+Wire Wire Line
+	5100 3850 4950 3850
+Wire Wire Line
+	4950 3850 4950 3700
+Wire Wire Line
+	6100 3800 6100 3950
+Connection ~ 4750 2600
+$Comp
+L Device:Q_PMOS_GDS Q1
+U 1 1 61CB7EF2
+P 5700 3150
+F 0 "Q1" V 6050 3100 50  0000 L CNN
+F 1 "Q_PMOS_GDS" V 5950 2900 50  0000 L CNN
+F 2 "Custom Parts:P-Channel_MOSFET_TO-251A" H 5900 3250 50  0001 C CNN
+F 3 "~" H 5700 3150 50  0001 C CNN
+	1    5700 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61D1E6A0
+P 5500 3800
+F 0 "#PWR0101" H 5500 3550 50  0001 C CNN
+F 1 "GND" H 5650 3750 50  0000 C CNN
+F 2 "" H 5500 3800 50  0001 C CNN
+F 3 "" H 5500 3800 50  0001 C CNN
+	1    5500 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 61EE3D14
+P 5700 2700
+F 0 "R4" H 5600 2650 50  0000 C CNN
+F 1 "10" H 5600 2750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5740 2690 50  0001 C CNN
+F 3 "~" H 5700 2700 50  0001 C CNN
+	1    5700 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 2550 5700 2450
+Wire Wire Line
+	5700 2850 5700 2950
+Connection ~ 4750 2800
+Wire Wire Line
+	4750 2600 4750 2800
+Wire Wire Line
+	4750 3050 4750 2800
+Wire Wire Line
+	5900 3250 6000 3250
+Wire Wire Line
+	4400 2900 4850 2900
+Wire Wire Line
+	4850 3250 4850 2900
+Connection ~ 4850 2900
+Wire Wire Line
+	5700 2450 4750 2450
+Wire Wire Line
+	4850 2900 5500 2900
+Wire Wire Line
+	4400 2800 4750 2800
+Wire Wire Line
+	4450 3000 4450 3300
+$Comp
+L power:GND #PWR0102
+U 1 1 61EF1ECC
+P 4450 3700
+F 0 "#PWR0102" H 4450 3450 50  0001 C CNN
+F 1 "GND" H 4300 3650 50  0000 C CNN
+F 2 "" H 4450 3700 50  0001 C CNN
+F 3 "" H 4450 3700 50  0001 C CNN
+	1    4450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3950 6100 3950
+Wire Wire Line
+	5500 3800 5500 3750
+Text Notes 3900 2800 0    50   ~ 0
+Switch
+Text Notes 3950 2900 0    50   ~ 0
+VBAT
+Text Notes 3950 3000 0    50   ~ 0
+GND
+Text GLabel 4650 2450 0    50   Input ~ 0
+Switch
+Text GLabel 5450 2750 0    50   Input ~ 0
+VBat
+Text GLabel 4300 3300 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4650 2450 4750 2450
+Connection ~ 4750 2450
+Wire Wire Line
+	5450 2750 5500 2750
+Wire Wire Line
+	5500 2750 5500 2900
+Connection ~ 5500 2900
+Wire Wire Line
+	5500 2900 6100 2900
+Wire Wire Line
+	4300 3300 4450 3300
+Connection ~ 4450 3300
+Wire Wire Line
+	4450 3300 4450 3700
+$EndSCHEMATC
